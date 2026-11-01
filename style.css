@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before {
+    content: "";
+    background-image: url('assets/fondo-pared-ladrillo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px)
+}
+
+.contenedor {
+    position: absolute;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 30%;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #fff;
+    text-align: center;
+}
+
+#titulo {
+    font-size: 5vh;
+    margin-bottom: 20px;
+}
+
+#datos {
+    min-width: 20%;
+    border: none;
+    border-radius: 3px;
+    border: solid 3px #fff;
+    background-color: #111;
+    height: 30px;
+    color: #fff;
+}
+
+label {
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1;
+}
+
+#datos:hover {
+    background-color: #fff;
+    color: #111;
+    transition-property: background, color;
+    transition-duration: 0.3s;
+
+
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+#entrada {
+    background-color: #fff;
+    color: #111;
+    font-size: 15px;
+    font-weight: bold;
+    width: 20%;
+    border-radius: 8px;
+    height: 4vh;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+#entrada:hover{
+    transition-property: background, color;
+    transition-duration: 0.3s;
+    background-color: #111;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+p {
+    background-color: #fff;
+    color: #111;
+    height: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span{
+    color: #111;
+    margin: auto;
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+
+a>img{
+    width: 20px;
+    margin: 20px;
+}
+
+img:hover{
+    cursor: pointer;
+    background-color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
